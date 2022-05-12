@@ -8,6 +8,42 @@ This Wiper Speed Control System is utilised in all sorts of automobiles, and its
 * The LED glow pattern stops on the 4th press; the wiper action starts with the next press.
 * If the push button is pressed for 2 seconds continuously, the RED light goes off and the pattern stops bringing it to default position which signifies the engine is turned OFF.
 
+# REQUIREMENTS FOR THE PROJECTS ARE :
+## STM32Cube IDE :
+* STM32Cube software ecosystem. STM32CubeIDE is an advanced C/C++ development platform with peripheral configuration, code generation, code compilation, and debug features for STM32 microcontrollers and microprocessors. It is based on the Eclipse®/CDT™ framework and GCC toolchain for the development, and GDB for the debugging. It allows the integration of the hundreds of existing plugins that complete the features of the Eclipse® IDE.
+
+## Xpack Packages :
+
+### Windows Build Tools:
+* The xPack Windows Build Tools is a standalone Windows binary distribution of GNU make and a few of other tools required by the Eclipse Embedded CDT (formerly GNU MCU/ARM Eclipse) project, but the binaries can also be used in generic build environments.
+
+### OpenOCD :
+* Open On-Chip Debugger (OpenOCD) is a free, open-source project that aims to provide debugging, in-system programming, and boundary scan using a debug adapter. The adapter is a hardware module that provides the right signals for the target to understand.
+
+### QEMU :
+* The xPack QEMU Arm is a standalone cross-platform binary distribution of QEMU, with several extensions for Arm Cortex-M devices.
+
+# 5WS AND 1H
+## WHAT
+It is Wiper Control system which is generally deployed in all the automobiles in order to ensure safety for the passengers and drivers during rainy conditions.
+
+## WHERE
+It is an element which is present in the windshield of the automobile.
+
+## WHO
+It is highly useful for drivers of any kind of automobile who needs clear vision of the road in case of dust or rain.
+
+## WHEN
+It is recommended to operate during dust or rain
+
+## WHY
+To get a clear vision of the road.
+
+## HOW
+It is implemented with the help of STM32 with the desired operation of turning on the engine, changing of speeds and turning off with the help of Embedded c Programming.
+
+
+
 # SWOT Analysis 
 ## Strength
 * Visibility
