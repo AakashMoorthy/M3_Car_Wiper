@@ -1,4 +1,3 @@
-
 # PROJECT TITTLE - WIPER CONTROL SYSTEM 
 
 # ABSTRACT :
@@ -9,7 +8,6 @@
 * Modern windshield wipers can also be operated on an as-needed basis. The intermittent wiper option, as opposed to the continuous wiper option, cycles the wipers on and off every few seconds rather than operating continuously. It was in the 1970s that intermittent control made its debut in autos. A steady power source was used to control the original intermittent wipers, which were routed through a series of switches to achieve their functionality. Most automobile wipers are now controlled by a microprocessor, which is becoming increasingly common.
 
 * Many wiper systems in cars today are controlled by a rain sensor, which measures the speed at which raindrops hit the windshield and activates the wipers. The inputs from the sensor are evaluated by a microprocessor, which then calculates the speed at which the wipers should travel.
-
 
 # INTRDUCTION
 Wiper system is the utility project. It is used to clean the wind shield of the car at the front and rear. Wiper works by removing oil,dust,rain water and dirt.That get struck to the wind shield and the arm is provided by the motor.The warm gear is able to generate the force required to move the wipers as fast as they need to move. now a days we have an automatic wiper control when ever we stop wiping in between the process it will automatically comes to initial position this is the new wiper system as behined in the wiper arm.The car wipers that have been available in the present day market are manual systems that work on the principle of manual switching.Our proposed system proposes an automatic wiper system that automatically switches ON the wiper on detection of rain and stops the wiper action when rain stops. This system eases the work of driver by eliminating the manual human intervention for initiating the wiper action, thereby contributing to the comfort driving.
@@ -99,8 +97,96 @@ It is implemented with the help of STM32 with the desired operation of turning o
 | LR_04	|Button pressed fourth time | 8 Hz speed - Blue, Green Orange alternative |	Implemented |
 | LR_05 |	Button pressed again for two seconds |Turn Off all LEDs |	Implemented |
 
-# Block Diagram:
+# Tools Used for Implementation :
 
- 
+## STM32Cube IDE :
+* STM32Cube software ecosystem. STM32CubeIDE is an advanced C/C++ development platform with peripheral configuration, code generation, code compilation, and debug features for STM32 microcontrollers and microprocessors. It is based on the Eclipse®/CDT™ framework and GCC toolchain for the development, and GDB for the debugging. It allows the integration of the hundreds of existing plugins that complete the features of the Eclipse® IDE.
 
+## Xpack Packages :
+
+### Windows Build Tools:
+* The xPack Windows Build Tools is a standalone Windows binary distribution of GNU make and a few of other tools required by the Eclipse Embedded CDT (formerly GNU MCU/ARM Eclipse) project, but the binaries can also be used in generic build environments.
+
+### OpenOCD :
+* Open On-Chip Debugger (OpenOCD) is a free, open-source project that aims to provide debugging, in-system programming, and boundary scan using a debug adapter. The adapter is a hardware module that provides the right signals for the target to understand.
+
+### QEMU :
+* The xPack QEMU Arm is a standalone cross-platform binary distribution of QEMU, with several extensions for Arm Cortex-M devices.
+
+
+
+
+
+## USAGE OF PREPROCESSOR/POINTERS/FUNCTION POINTERS/STRUCT/TYPE DEF
+
+## Preprocessor:
+The C preprocessor is a macro processor that is used automatically by the C compiler to transform your program before actual compilation. It is called a macro processor because it allows you to define macros, which are brief abbreviations for longer constructs.
+
+## The C preprocessor provides four separate facilities that you can use as you see fit:
+
+Inclusion of header files. These are files of declarations that can be substituted into your program.
+Macro expansion. You can define macros, which are abbreviations for arbitrary fragments of C code, and then the C preprocessor will replace the macros with their definitions throughout the program.
+Conditional compilation. Using special preprocessing directives, you can include or exclude parts of the program according to various conditions.
+Line control. If you use a program to combine or rearrange source files into an intermediate file which is then compiled, you can use line control to inform the compiler of where each source line originally came from.
+
+## Pointers:
+Pointers:
+The Pointer in C, is a variable that stores address of another variable. A pointer can also be used to refer to another pointer function. A pointer can be incremented/decremented, i.e., to point to the next/ previous memory location. The purpose of pointer is to save memory space and achieve faster execution time.
+Like variables, pointers in C programming have to be declared before they can be used in your program. Pointers can be named anything you want as long as they obey C’s naming rules. A pointer declaration has the following form.
+
+ syntax:
+data_type * pointer_variable_name;
+
+Types of Pointers in C:
+1.Null Pointer
+2.Void Pointer
+3.Wild pointer
+4.Dangling pointer
+
+## Funtion Pointer:
+In the C function pointer is used to resolve the run time-binding. A function pointer is a pointer that stores the address of the function and invokes the function whenever required.
+In C, we can use function pointers to avoid code redundancy.
+1) Unlike normal pointers, a function pointer points to code, not data. Typically a function pointer stores the start of executable code.
+2) Unlike normal pointers, we do not allocate de-allocate memory using function pointers.
+
+## Struct:
+A structure is a key word that create user defined data type in C. A structure creates a data type that can be used to group items of possibly different types into a single type.
+
+‘struct’ keyword is used to create a structure. 
+
+A structure variable can either be declared with structure declaration or as a separate declaration like basic types.Structure members cannot be initialized with declaration. 
+
+Structure members can be initialized using curly braces ‘{}’. For example, following is a valid initialization. 
+Structure members are accessed using dot (.) operator.
+
+## Type def:
+typedef, which you can use to give a type a new name. Following is an example to define a term BYTE for one-byte numbers.After this type definition, the identifier BYTE can be used as an abbreviation for the type unsigned char
+
+By convention, uppercase letters are used for these definitions to remind the user that the type name is really a symbolic abbreviation, but you can use lowercase.
+
+You can use typedef to give a name to your user defined data types as well. For example, you can use typedef with structure to define a new data type and then use that data type to define structure variables directly
+
+Syntax: typedef data_type new_name
+# HIGH LEVEL TEST CASES :
+
+|Test ID |	Description |	Exp.i/p	| Exp.o/p |	Actual o/p |	Output |
+|:-------|:-----------------|:----------|:--------|:---------------|:----------|
+|`H_01`|	check if the BUTTON is pressed	|program execution|	Engine starts	|RED LED ON	|PASS|
+|`H_02`|	check if the BUTTON is pressed	|program execution|	Wiper starts	|BLUE LED ON	|PASS|
+|`H_03`|	check if the BUTTON is pressed	|program execution|	Wiper starts	|GREEN LED ON	|PASS|
+|`H_04`|	check if the BUTTON is pressed	|program execution|	Wiper starts	|ORANGE LED ON	|PASS|
+|`H_05`|	check if the BUTTON is pressed	|-----------------|	Engine stop	|RED LED OFF	|PASS|
+
+
+
+
+
+# LOW LEVEL TEST CASES :
+|Test ID |	Description |	Exp.i/p |	Exp.o/p	|Actual o/p	| Output|
+|:-------|:-------------|:--------|:--------|:----------|:-------|
+|`L_01`|	check if the BUTTON is pressed      |	program execution     |	Engine starts	| RED LED ON	                                  |PASS|
+|`L_02`|	check if the BUTTON is pressed again|	program execution     |	Wiper starts and runs at 35% (slow)	| BLUE LED ON	      |PASS|
+|`L_03`|	check if the BUTTON is pressed again|	program execution     |	Wiper starts and runs at 70%	(medium)| GREEN LED ON	      |PASS|
+|`L_04`|	check if the BUTTON is pressed again|	program execution     |	Wiper starts and runs at 100% (fast)|ORANGE LED ON	    |PASS|
+|`L_05`|	check if the BUTTON is pressed again|	-----------------     |	Engine stop	| RED LED OFF                                  	  |PASS|
 
