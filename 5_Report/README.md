@@ -23,6 +23,17 @@ This Wiper Speed Control System is utilised in all sorts of automobiles, and its
 ## STM32Cube IDE :
 * STM32Cube software ecosystem. STM32CubeIDE is an advanced C/C++ development platform with peripheral configuration, code generation, code compilation, and debug features for STM32 microcontrollers and microprocessors. It is based on the Eclipse®/CDT™ framework and GCC toolchain for the development, and GDB for the debugging. It allows the integration of the hundreds of existing plugins that complete the features of the Eclipse® IDE.
 
+### Features Of STM32F407G
+* Flash memory of up to 1 megabyte.
+* OTP memory of 512 bytes.
+* Compact Flash, SRAM, PSRAM, NOR, and NAND memories are supported by this flexible static memory controller.
+* Sleep, Stop, and Standby modes are low-power modes.
+* 16-stream DMA controller with FIFOs and burst support for general-purpose DMA.
+* Up to 54 Mbytes/s 8- to 14-bit parallel camera interface.
+* Generator of true random numbers.
+* Hardware calendar, CRC calculating unit, 96-bit unique ID RTC, subsecond accuracy.
+
+
 ## Xpack Packages :
 
 ### Windows Build Tools:
