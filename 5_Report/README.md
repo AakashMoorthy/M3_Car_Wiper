@@ -23,15 +23,6 @@ This Wiper Speed Control System is utilised in all sorts of automobiles, and its
 ## STM32Cube IDE :
 * STM32Cube software ecosystem. STM32CubeIDE is an advanced C/C++ development platform with peripheral configuration, code generation, code compilation, and debug features for STM32 microcontrollers and microprocessors. It is based on the Eclipse®/CDT™ framework and GCC toolchain for the development, and GDB for the debugging. It allows the integration of the hundreds of existing plugins that complete the features of the Eclipse® IDE.
 
-### Features Of STM32F407G
-* Flash memory of up to 1 megabyte.
-* OTP memory of 512 bytes.
-* Compact Flash, SRAM, PSRAM, NOR, and NAND memories are supported by this flexible static memory controller.
-* Sleep, Stop, and Standby modes are low-power modes.
-* 16-stream DMA controller with FIFOs and burst support for general-purpose DMA.
-* Up to 54 Mbytes/s 8- to 14-bit parallel camera interface.
-* Generator of true random numbers.
-* Hardware calendar, CRC calculating unit, 96-bit unique ID RTC, subsecond accuracy.
 
 
 ## Xpack Packages :
@@ -52,6 +43,16 @@ This Wiper Speed Control System is utilised in all sorts of automobiles, and its
 STM32F407 series of microcontrollers are high-performance MCUs designed for medical, industrial and consumer applications. It is based on ARM Cortex-M4 and offers up to 168MHz. The STM32F407VGT6 is the onboard chip which comes in a 100-pin LQFP package.
 
 The STM32F407G-DISC1 is a Discovery Kit allows users to easily develop applications with the STM32F407 high performance microcontrollers with ARM cortex-M4 32-bit core. It includes everything required either for beginners or for experienced users to get quickly started. Based on the STM32F407VGT6, it includes an ST-LINK/V2 or ST-LINK/V2-A embedded debug tool, two ST MEMS digital accelerometers, a digital microphone, one audio DAC with integrated class D speaker driver, LEDs and push buttons and an USB OTG micro-AB connector.
+
+### Features Of STM32F407G
+* Flash memory of up to 1 megabyte.
+* OTP memory of 512 bytes.
+* Compact Flash, SRAM, PSRAM, NOR, and NAND memories are supported by this flexible static memory controller.
+* Sleep, Stop, and Standby modes are low-power modes.
+* 16-stream DMA controller with FIFOs and burst support for general-purpose DMA.
+* Up to 54 Mbytes/s 8- to 14-bit parallel camera interface.
+* Generator of true random numbers.
+* Hardware calendar, CRC calculating unit, 96-bit unique ID RTC, subsecond accuracy.
 
 # 5WS AND 1H
 ## WHAT
